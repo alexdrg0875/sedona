@@ -138,8 +138,25 @@
 	
 	<section class="modal modal-search">
 		<h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-		<!-- Здесь будет форма -->
-		<span class="modal-find">Найти</span>
+		<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+			<p>
+				<label for="search-date-check-in">Дата заезда:</label>
+				<input class="search-icon-calendar" id="search-date-check-in" type="date" name="date-check-in" value="2017-04-24" required>
+			</p>
+			<p>
+				<label for="search-date-check-out">Дата выезда:</label>
+				<input class="search-icon-calendar" id="search-date-check-out" type="date" name="date-check-out" value="2017-07-04" required>
+			</p>
+			<p>
+				<label for="search-quantity-adult">Взрослые:</label>
+  				<input class="search-quantity" id="search-quantity-adult" type="number" name="quantity-adult" min="1" max="10" value="1" required>
+			</p>
+			<p>
+				<label for="search-quantity-children">Дети:</label>
+  				<input class="search-quantity" id="search-quantity-children" type="number" name="quantity-children" min="0" max="10" value="0" required>
+			</p>
+			<button class="button" type="submit">Найти</button>
+		</form>
 	</section>
 </body>
 

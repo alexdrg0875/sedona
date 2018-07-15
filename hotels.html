@@ -31,10 +31,81 @@
 	</header>
 	<main>
 		<section class="filters">
-			<h2 class="visually-hidden">Фильтр гостиниц</h2>
-			<!-- Здесь будет форма -->
+			<h2 class="visually-hidden">Фильтр поиска жилья</h2>
+			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+				<fieldset>
+					<legend>Инфраструктура:</legend>
+					<ul>
+						<li class="filter-option">
+							<label for="filter-pool">Бассейн</label>
+							<input class="visually-hidden filter-input filter-input-checkbox" id="filter-pool" type="checkbox" name="pool" checked>
+						</li>
+						<li class="filter-option">
+							<label for="filter-parking">Парковка</label>
+							<input class="visually-hidden filter-input filter-input-checkbox" id="filter-parking" type="checkbox" name="parking">
+						</li>
+						<li class="filter-option">
+							<label for="filter-wifi">Wi-Fi</label>
+							<input class="visually-hidden filter-input filter-input-checkbox" id="filter-wifi" type="checkbox" name="wifi">
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>	
+					<legend>Тип жилья:</legend>
+					<ul>
+						<li class="filter-option">
+							<label for="filter-hotel">Гостиница</label>
+							<input class="visually-hidden filter-input filter-input-checkbox" id="filter-hotel" type="checkbox" name="hotel" checked>
+						</li>
+						<li class="filter-option">
+							<label for="filter-motel">Мотель</label>
+							<input class="visually-hidden filter-input filter-input-checkbox" id="filter-motel" type="checkbox" name="motel" checked>
+						</li>
+						<li class="filter-option">
+							<label for="filter-apartments">Апартаменты</label>
+							<input class="visually-hidden filter-input filter-input-checkbox" id="filter-apartments" type="checkbox" name="apartments" checked>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>	
+					<legend>Стоимость в сутки (р):</legend>
+					<p class="costs-day">
+						<span>от 0</span>
+						<span>до 3000</span>
+					</p>
+					<input type="range" name="costs-max" min="0" max="3000" value="2500">
+				</fieldset>
+				<button class="filter-button button" type="submit">Показать</button>	
+			</form>		
 		</section>
-
+		<section class="sort">
+			<h2 class="visually-hidden">Сортировка поиска жилья</h2>
+			<p class="sort-find">Найдено:
+				<span class="sort-find-quantity">3</span>
+			</p>
+			<p>Сортировка:</p>
+			<ul class="sort-list">
+				<li class="sort-item">
+					<button class="sort-button sort-button-price" type="button">По цене</button>
+				</li>
+				<li class="sort-item">
+					<button class="sort-button sort-button-type" type="button">По типу</button>
+				</li>
+				<li class="sort-item">
+					<button class="sort-button sort-button-rate" type="button">По рейтингу</button>
+				</li>
+			</ul>
+			<p class="sort-direction">
+				<span>
+					<label class="visually-hidden" for="sort-direction-up">Сортировка вверх</label>
+					<button class="sort-icon-up" id="sort-direction-up">Up</button>
+				</span>
+				<span>
+					<label class="visually-hidden" for="sort-direction-down">Сортировка вниз</label>
+					<button class="sort-icon-down" id="sort-direction-down">Down</button>
+				</span>
+			</p>
+		</section>
 		<section class="catalog">
 			<h1 class="visually-hidden">Выбор гостиницы</h1>
 			<ul class="catalog-list">
