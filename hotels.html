@@ -70,10 +70,9 @@
 				<fieldset>	
 					<legend>Стоимость в сутки (р):</legend>
 					<p class="costs-day">
-						<span>от 0</span>
-						<span>до 3000</span>
+						<label class="cost-min">от <input type="text" name="cost-min" value="0"></label>
+						<label class="cost-max">до <input type="text" name="cost-max" value="3000"></label>
 					</p>
-					<input type="range" name="costs-max" min="0" max="3000" value="2500">
 				</fieldset>
 				<button class="filter-button button" type="submit">Показать</button>	
 			</form>		
@@ -86,28 +85,28 @@
 			<p>Сортировка:</p>
 			<ul class="sort-list">
 				<li class="sort-item">
-					<button class="sort-button sort-button-price" type="button">По цене</button>
+					<a href="#" class="sort-button sort-button-price">По цене</a>
 				</li>
 				<li class="sort-item">
-					<button class="sort-button sort-button-type" type="button">По типу</button>
+					<a href="#" class="sort-button sort-button-type">По типу</a>
 				</li>
 				<li class="sort-item">
-					<button class="sort-button sort-button-rate" type="button">По рейтингу</button>
+					<a href="#" class="sort-button sort-button-rate">По рейтингу</a>
 				</li>
 			</ul>
 			<p class="sort-direction">
 				<span>
 					<label class="visually-hidden" for="sort-direction-up">Сортировка вверх</label>
-					<button class="sort-icon-up" id="sort-direction-up">Up</button>
+					<a href="#" class="sort-icon-up" id="sort-direction-up">Up</a>
 				</span>
 				<span>
 					<label class="visually-hidden" for="sort-direction-down">Сортировка вниз</label>
-					<button class="sort-icon-down" id="sort-direction-down">Down</button>
+					<a href="#" class="sort-icon-down" id="sort-direction-down">Down</a>
 				</span>
 			</p>
 		</section>
 		<section class="catalog">
-			<h1 class="visually-hidden">Выбор гостиницы</h1>
+			<h1 class="visually-hidden">Найденные гостиницы</h1>
 			<ul class="catalog-list">
 				<li class="catalog-item">
 					<h3>
