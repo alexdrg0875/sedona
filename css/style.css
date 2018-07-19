@@ -10,14 +10,21 @@ body {
 	text-transform: uppercase;
 
 	background-color: #f2f2f2;
-	background-image: url("../img/background.jpg");
-//	background-position: center;
+	
+//	background-image: url("../img/sedona-index-1200.jpg");
+	background-position: center;
 	background-repeat: no-repeat;
 }
 
-.inner-page {
-	background-image: url("../img/filter background.jpg");
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1;
+	height: 1;
+	margin: -1;
 }
+
+
 
 a{
 	text-decoration: none;
@@ -154,6 +161,17 @@ a{
 	color: #766357;	
 }
 
+.main-banner {
+	background-image: url("../img/background.jpg");
+	background-position: center;
+
+}
+
+.main-banner img {
+	margin: 0 auto;
+//	border: 1px dashed green;
+}
+
 .tagline {
 	line-height: 26px;
 	text-align: center;
@@ -213,7 +231,17 @@ a{
 	font-weight: 700;
 }
 
-.filters{
+.map-index {
+	height: 472px;
+	background-image: url("../img/map.jpg");	
+	background-position: center;
+}
+
+.inner-page {
+	background-image: url("../img/filter background.jpg");
+}
+
+.filters {
 	color: #ffffff;
 	
 	background: transparent;
@@ -385,5 +413,213 @@ input {
 
 .icon-calendar:hover{
 	fill: #000000;
+}
+
+/* styles for layout grid */
+
+
+.image-prototype {
+	position:absolute;
+	opacity:0.35;
+	z-index: 1;
+	left: 73px;
+}
+
+.main-container-wrapper {
+	margin: 0 auto;
+
+	width: 1200px;
+//	border: 1px dashed red;
+	box-shadow:0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-header {
+
+	
+//	border: 1px dashed red; 
+}
+
+.main-header-logo {
+	position: absolute;
+//	border: 1px dashed black;
+}
+
+.main-navigation {
+	display: flex;
+	justify-content: center;
+//	border: 1px dashed yellow;
+}
+
+.site-navigation {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	margin: 0 auto;
+	width: 1055px;
+	min-height: 55px;
+//	border: 1px dashed blue;
+}
+
+.site-navigation li {
+	width: 240px;
+	padding: 15px 0;
+//	border: 1px dashed red;
+}
+
+.site-navigation li:nth-child(3) {
+	margin-left: auto; 
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+	text-align: right;
+
+}
+
+.main-banner {
+	display: flex;
+	flex-direction: column;
+	height: 510px;
+	justify-content: flex-end;
+	align-items: center;
+//	border: 1px dashed red;
+}
+
+.tagline {
+	box-sizing: border-box;
+	padding-top: 57px;
+	min-height: 215px;
+
+//	border: 1px dashed blue;
+}
+
+.tagline h3,
+.tagline p {
+	margin: 0;
+}
+
+.features-list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+
+//	border: 1px dashed blue;
+}
+
+.feature-item h3{
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+
+.feature-item {
+	box-sizing: border-box;
+	padding-top: 45px;
+	width: 400px;
+	min-height: 255px;
+
+//	border: 1px dashed blue;
+
+
+}
+
+.feature-image {
+	width: 800px;
+	height: 255px;
+}
+
+.feature-image-1{
+	background-image: url(../img/photo10.jpg);
+	background-position: center; 
+}
+
+.feature-image-2{
+	background-image: url(../img/photo5.jpg);
+	background-position: center; 
+}
+
+.advantages-list {
+	padding: 0;
+}
+
+.advantages-item h3 {
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+
+.advantages-item p,
+.feature-item p {
+	margin-bottom: 20px;
+}
+
+.advantages-item {
+	box-sizing: border-box;
+	padding-top: 160px; 
+	width: 400px;
+	min-height: 330px;
+//	border: 1px dashed blue;
+}
+
+.advantages-list {
+	box-sizing: border-box;
+	width: 1200px;
+	min-height: 255px;
+
+
+	display: flex;
+
+//	border: 1px dashed blue;
+}
+
+.features-list > li:nth-child(1) {
+	order: 1;
+}
+.features-list > li:nth-child(2) {
+	order: 2;
+}
+.features-list > li:nth-child(3) {
+	order: 4;
+}
+.features-list > li:nth-child(4) {
+	order: 5;
+}
+.features-list > li:nth-child(5) {
+	order: 6;
+}
+.features-list > li:nth-child(6) {
+	order: 7;
+}
+.features-list > li:nth-child(7) {
+	order: 8;
+}
+.features-list > li:nth-child(8) {
+	order: 3;
+}
+
+.appointment h2 {
+	margin-top: 0;
+}
+
+.appointment {
+	padding: 50px 0;
+	box-sizing: border-box;
+	min-height: 293px;
+}
+
+.main-footer {
+	display: flex;
+	min-height: 120px;
+}
+
+.footer-contacts,
+.footer-social,
+.footer-copyright {
+	width: 400px;
+	padding: 25px;
+	
+}
+
+.footer-copyright span {
+	margin: 5px;
 }
 
