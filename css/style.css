@@ -237,8 +237,9 @@ a{
 	background-position: center;
 }
 
-.inner-page {
+.filter {
 	background-image: url("../img/filter background.jpg");
+	background-position: center;
 }
 
 .filters {
@@ -623,3 +624,63 @@ input {
 	margin: 5px;
 }
 
+
+
+.filter {
+	margin: 0 auto;
+	width: 1055px;
+	display: flex;
+	border: 1px dashed green;	
+}
+
+.filter legend {
+	border: 1px dashed blue;
+}
+
+.filter fieldset {
+	border: 1px dashed blue;
+}
+
+.filter-list {
+	margin: 0;
+	padding: 0;
+	width: 255px;
+	min-height: 215px;
+}
+
+.filter-list-long {
+	margin-left: auto;
+
+	width: 330px;
+}
+
+.sort-menu {
+	display: flex;
+	min-height: 85px;
+	border: 1px dashed yellow;
+}
+
+.catalog-list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	border: 1px dashed green;
+}
+
+.catalog-item {
+	width: 1200px;
+	height: 150px;
+	display: flex;
+
+
+	border: 1px dashed blue;
+}
+.catalog-item-wrapper {
+	margin: auto;
+	width: 1055px;
+	height: 90px;
+
+	display: flex;
+	border: 1px dashed red;
+}
