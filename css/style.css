@@ -1,3 +1,13 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
 body {
 	margin:0;
 	padding: 0;
@@ -164,12 +174,8 @@ a{
 .main-banner {
 	background-image: url("../img/background.jpg");
 	background-position: center;
+	background-size: 100% auto;
 
-}
-
-.main-banner img {
-	margin: 0 auto;
-//	border: 1px dashed green;
 }
 
 .tagline {
@@ -430,7 +436,6 @@ input {
 	margin: 0 auto;
 
 	width: 1200px;
-//	border: 1px dashed red;
 	box-shadow:0 0 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -442,13 +447,13 @@ input {
 
 .main-header-logo {
 	position: absolute;
-//	border: 1px dashed black;
+	outline:  1px dashed black;
 }
 
 .main-navigation {
 	display: flex;
 	justify-content: center;
-//	border: 1px dashed yellow;
+	outline:  1px dashed yellow;
 }
 
 .site-navigation {
@@ -458,13 +463,13 @@ input {
 	margin: 0 auto;
 	width: 1055px;
 	min-height: 55px;
-//	border: 1px dashed blue;
+	outline:  1px dashed blue;
 }
 
 .site-navigation li {
 	width: 240px;
 	padding: 15px 0;
-//	border: 1px dashed red;
+	outline:  1px dashed red;
 }
 
 .site-navigation li:nth-child(3) {
@@ -483,15 +488,14 @@ input {
 	height: 510px;
 	justify-content: flex-end;
 	align-items: center;
-//	border: 1px dashed red;
+	outline:  1px dashed red;
 }
 
 .tagline {
-	box-sizing: border-box;
-	padding-top: 57px;
+	padding-top: 60px;
 	min-height: 215px;
 
-//	border: 1px dashed blue;
+	outline:  1px dashed blue;
 }
 
 .tagline h3,
@@ -505,7 +509,7 @@ input {
 	display: flex;
 	flex-wrap: wrap;
 
-//	border: 1px dashed blue;
+	outline:  1px dashed blue;
 }
 
 .feature-item h3{
@@ -514,12 +518,11 @@ input {
 }
 
 .feature-item {
-	box-sizing: border-box;
 	padding-top: 45px;
 	width: 400px;
 	min-height: 255px;
 
-//	border: 1px dashed blue;
+	outline:  1px dashed blue;
 
 
 }
@@ -554,47 +557,47 @@ input {
 }
 
 .advantages-item {
-	box-sizing: border-box;
 	padding-top: 160px; 
 	width: 400px;
 	min-height: 330px;
-//	border: 1px dashed blue;
+	outline:  1px dashed blue;
 }
 
 .advantages-list {
-	box-sizing: border-box;
 	width: 1200px;
 	min-height: 255px;
 
 
 	display: flex;
 
-//	border: 1px dashed blue;
+	outline:  1px dashed blue;
 }
 
 .features-list > li:nth-child(1) {
 	order: 1;
 }
+
 .features-list > li:nth-child(2) {
-	order: 2;
-}
-.features-list > li:nth-child(3) {
-	order: 4;
-}
-.features-list > li:nth-child(4) {
 	order: 5;
 }
-.features-list > li:nth-child(5) {
+.features-list > li:nth-child(3) {
 	order: 6;
 }
-.features-list > li:nth-child(6) {
+.features-list > li:nth-child(4) {
 	order: 7;
 }
-.features-list > li:nth-child(7) {
+.features-list > li:nth-child(5) {
 	order: 8;
 }
-.features-list > li:nth-child(8) {
+.features-list > li:nth-child(6) {
 	order: 3;
+}
+
+.features-list > li:nth-child(7) {
+	order: 2;
+}
+.features-list > li:nth-child(8) {
+	order: 4;
 }
 
 .appointment h2 {
@@ -603,7 +606,6 @@ input {
 
 .appointment {
 	padding: 50px 0;
-	box-sizing: border-box;
 	min-height: 293px;
 }
 
@@ -630,22 +632,22 @@ input {
 	margin: 0 auto;
 	width: 1055px;
 	display: flex;
-	border: 1px dashed green;	
+	outline: 1px dashed green;	
 }
 
 .filter legend {
-	border: 1px dashed blue;
+	outline: 1px dashed blue;
 }
 
 .filter fieldset {
-	border: 1px dashed blue;
+	outline: 1px dashed blue;
 }
 
 .filter-list {
 	margin: 0;
 	padding: 0;
 	width: 255px;
-	min-height: 215px;
+	min-height: 217px;
 }
 
 .filter-list-long {
@@ -656,8 +658,9 @@ input {
 
 .sort-menu {
 	display: flex;
-	min-height: 85px;
-	border: 1px dashed yellow;
+	min-height: 87px;
+	border-bottom: 1px solid #e5e5e5;
+	outline: 1px dashed yellow;
 }
 
 .catalog-list {
@@ -665,22 +668,49 @@ input {
 	padding: 0;
 	display: flex;
 	flex-direction: column;
-	border: 1px dashed green;
+	outline: 1px dashed green;
 }
 
 .catalog-item {
 	width: 1200px;
-	height: 150px;
-	display: flex;
-
-
-	border: 1px dashed blue;
+	height: 151px;
+	border-bottom: 1px solid #e5e5e5;
 }
 .catalog-item-wrapper {
-	margin: auto;
+	margin: 25px auto;
 	width: 1055px;
-	height: 90px;
+	height: 100px;
 
 	display: flex;
-	border: 1px dashed red;
+	outline: 1px dashed red;
+}
+
+.catalog-item-order h3 {
+	margin: 0;
+	
+}
+.catalog-item-order p {
+	margin: 8px 0;
+	
+}
+
+.catalog-item-rating p {
+	margin: 40px 0;
+}
+
+.catalog-item-wrapper > div:nth-child(1) {
+	margin-left: 30px;
+}
+
+.catalog-item-wrapper > div:nth-child(2) {
+	margin-left: auto;
+	text-align: right;
+}
+
+.catalog-item-wrapper > div:nth-child(3) {
+	order: -1;
+}
+
+.catalog-item-image {
+	margin: 5px 0;
 }
