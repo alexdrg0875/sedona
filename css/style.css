@@ -278,14 +278,15 @@ a{
 }
 
 .filter {
-	background-image: url("../img/filter background.jpg");
-	background-position: center;
+	
 }
 
 .filters {
 	color: #ffffff;
 	
-	background: transparent;
+	background-image: url("../img/filter background.jpg");
+	background-position: center;
+//	background: transparent;
 }
 
 .filter fieldset {
@@ -299,6 +300,7 @@ a{
 }
 
 .filter ul {
+	margin: 0;
 	list-style: none;
 }
 
@@ -708,30 +710,72 @@ input {
 
 .filter {
 	margin: 0 auto;
+	padding: 27px 0 6px;
 	width: 1055px;
 	display: flex;
 	outline: 1px dashed green;	
 }
 
 .filter legend {
+	margin-bottom: 25px;
 	outline: 1px dashed blue;
 }
 
 .filter fieldset {
-	outline: 1px dashed blue;
-}
-
-.filter-list {
 	margin: 0;
 	padding: 0;
 	width: 255px;
-	min-height: 217px;
+//	min-height: 217px;
+
+	outline: 1px dashed blue;
 }
 
-.filter-list-long {
+.filter-option {
+	margin-bottom: 25px;
+}
+
+.filter-option label {
+	position: relative;
+
+	display: block;
+
+	cursor: pointer;
+	user-select: none;
+}
+
+.filter fieldset:last-child {
 	margin-left: auto;
 
 	width: 330px;
+}
+
+.filter-input-checkbox:not(:checked) + label::before {
+	content: "";
+	position: absolute;
+	left: -38px;
+	top: -1px;
+
+	width: 23px;
+	height: 23px;
+
+	background-image: url("../img/checkbox-off.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::after {
+	content: "";
+
+	position: absolute;
+	top: -1px;
+	left: -38px;
+
+	width: 27px;
+	height: 23px;
+
+	background-image: url("../img/checkbox-on.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .sort-menu {
