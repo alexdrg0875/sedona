@@ -49,6 +49,7 @@ a{
 	text-transform: uppercase;
 
 	border: none;
+	cursor: pointer;
 }
 
 .button-info {
@@ -114,6 +115,10 @@ a{
 }
 
 .button-filter {
+	display: block;
+	margin: 0 auto;
+	padding: 5px 33px;
+	
 	font-weight: 400;
 	
 	border: 2px solid #ffffff;
@@ -301,27 +306,43 @@ a{
 
 .filter ul {
 	margin: 0;
+	padding-left: 44px; 
 	list-style: none;
 }
 
-.cost-filter {
+.price-filter {
+	position: relative;
+	margin: 0 0 20px 15px;
+	width: 320px;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
-	width: 220px;
-	height: 17px;
 }
 
-.cost-filter-field {
-	text-align: center;
-	width: 110px;
+.price-filter-field {
+	display: inline-block;
+	margin: 6px 0 6px 67px;
+
+//	text-align: center;
+
 }
 
-.cost-filter input {
+.price-filter input {
 	color: #ffffff;
 	
 	background: transparent;
 	border: none;
 	width: 55px;
+}
+
+.price-filter::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 2px;
+	height: 22px;
+	background: #ffffff;
+	transform: translate(-50%, -50%);
 }
 
 .sort-menu {
@@ -711,7 +732,7 @@ input {
 .filter {
 	margin: 0 auto;
 	padding: 27px 0 6px;
-	width: 1055px;
+	width: 1060px;
 	display: flex;
 	outline: 1px dashed green;	
 }
@@ -752,7 +773,7 @@ input {
 .filter-input-checkbox:not(:checked) + label::before {
 	content: "";
 	position: absolute;
-	left: -38px;
+	left: -40px;
 	top: -1px;
 
 	width: 23px;
@@ -768,7 +789,7 @@ input {
 
 	position: absolute;
 	top: -1px;
-	left: -38px;
+	left: -40px;
 
 	width: 27px;
 	height: 23px;
@@ -778,9 +799,54 @@ input {
 	background-position: 0 0;
 }
 
+.filter-list legend {
+	margin: 0 0 10px 15px;
+}
+
+.range-controls {
+	position: relative;
+	margin: 0 0 32px 15px;
+}
+
+.range-controls .scale {
+	height: 2px;
+	background: rgba( 255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+	width: 80%;
+	height: 2px;
+	background: #ffffff;
+}
+
+.range-toggle {
+	position: absolute;
+	top: -9px;
+
+	width: 4px;
+	height: 4px;
+
+	background: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+	left: 0;
+}
+
+.range-toggle-max {
+	left: 80%;
+}
+
 .sort-menu {
 	display: flex;
-//	min-height: 87px;
 	width : 1055px;
 	margin: 0 auto;
 	justify-content: space-between;

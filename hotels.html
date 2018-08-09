@@ -12,7 +12,7 @@
 <body class="inner-page">
 	<div class="main-container-wrapper">
 		<header class="main-header">
-			<img class="image-prototype-1200" src="img/sedona-hotels-1200.jpg">
+			<img class="image-prototype-1200" src="img/..sedona-hotels-1200.jpg">
 			<nav class="main-navigation">
 				<a class="main-header-logo" href="index.html">
 					<img src="img/logo.png" width="138" height="70" alt="Logo City of Sedona">
@@ -69,18 +69,25 @@
 							</li>
 						</ul>
 					</fieldset>
-					<fieldset class="filter-list filter-list-long">	
+					<fieldset class="filter-list">	
 						<legend>Стоимость в сутки (р):</legend>
-						<p class="cost-filter">
-							<label class="cost-filter-field">
+						<div class="price-filter">
+							<label class="price-filter-field">
 								от 
-								<input type="text" name="cost-min" value="0">
+							<input type="text" name="price-min" value="0">
 							</label>
-							<label class="cost-filter-field">
+							<label class="price-filter-field">
 								до 
-								<input type="text" name="cost-max" value="3000">
+								<input type="text" name="price-max" value="3000">
 							</label>
-						</p>
+						</div>
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar"></div>
+							</div>
+							<div class="range-toggle range-toggle-min"></div>
+							<div class="range-toggle range-toggle-max"></div>
+						</div>
 					<button class="button-filter button" type="submit">Показать</button>
 					</fieldset>
 						
