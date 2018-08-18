@@ -515,12 +515,10 @@ input {
 .main-navigation {
 	display: flex;
 	justify-content: center;
-	outline:  1px dashed yellow;
 }
 
 .main-header-logo {
 	position: absolute;
-	outline:  1px dashed black;
 }
 
 .site-navigation {
@@ -531,14 +529,12 @@ input {
 	width: 87.92%;
 //	width: 1055px;
 	min-height: 55px;
-	outline:  1px dashed blue;
 }
 
 .site-navigation li {
 	width: 22.75%;
 //	width: 240px;
 	padding: 15px 0;
-	outline:  1px dashed red;
 }
 
 .site-navigation li:nth-child(3) {
@@ -558,7 +554,6 @@ input {
 	height: 510px;
 	justify-content: flex-end;
 	align-items: center;
-	outline:  1px dashed red;
 }
 
 .main-banner > img:nth-child(3) {
@@ -568,9 +563,6 @@ input {
 
 .tagline {
 	padding: 53px 0; 
-//	min-height: 215px;
-
-	outline:  1px dashed blue;
 }
 
 .tagline h3 {
@@ -587,16 +579,11 @@ input {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-
-	outline:  1px dashed blue;
 }
 
 .feature-item {
 	padding: 41px 0;
 	width: 33.33%;
-//	min-height: 255px;
-
-	outline:  1px dashed blue;
 }
 
 
@@ -646,8 +633,6 @@ input {
 	width: 100%;
 	min-height: 255px;
 	display: flex;
-
-	outline:  1px dashed blue;
 }
 
 .advantages-item h3 {
@@ -660,7 +645,6 @@ input {
 	padding: 160px 0 0; 
 	width: 33.33%;
 	min-height: 330px;
-	outline:  1px dashed blue;
 }
 
 
@@ -734,21 +718,16 @@ input {
 	padding: 27px 0 6px;
 	width: 1060px;
 	display: flex;
-	outline: 1px dashed green;	
 }
 
 .filter legend {
 	margin-bottom: 25px;
-	outline: 1px dashed blue;
 }
 
 .filter fieldset {
 	margin: 0;
 	padding: 0;
 	width: 255px;
-//	min-height: 217px;
-
-	outline: 1px dashed blue;
 }
 
 .filter-option {
@@ -853,7 +832,6 @@ input {
 	align-items: center;
 
 	border-bottom: 1px solid #e5e5e5;
-	outline: 1px dashed yellow;
 }
 
 .sort-find {
@@ -862,7 +840,7 @@ input {
 
 .sort-list {
 	display: flex;
-	margin: 3px 439px 0 0;
+	margin: 3px 455px 0 0;
 	padding: 0;
 	width: 353px;
 	justify-content: space-between;
@@ -872,12 +850,28 @@ input {
 	display: flex;
 }
 
+.sort-icon-up {
+	margin-right: 10px;
+}
+
+.sort-icon {
+	fill: #cacaca;
+}
+
+.sort-icon:hover {
+	fill: #231f20;
+}
+
+.sort-icon:active,
+.sort-icon-active {
+	fill: #81b3d2;
+}
+
 .catalog-list {
 	margin: 0;
 	padding: 0;
 	display: flex;
 	flex-direction: column;
-	outline: 1px dashed green;
 }
 
 .catalog-item {
@@ -888,10 +882,8 @@ input {
 .catalog-item-wrapper {
 	margin: 25px auto;
 	width: 1055px;
-//	height: 100px;
 
 	display: flex;
-	outline: 1px dashed red;
 }
 
 .catalog-item-order h3 {
