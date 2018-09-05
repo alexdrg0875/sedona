@@ -277,7 +277,7 @@ a{
 }
 
 .map-index {
-	height: 472px;
+	height: 475px;
 	background-image: url("../img/map.jpg");	
 	background-position: center;
 }
@@ -429,6 +429,7 @@ a{
 }
 
 .modal {
+
 	line-height: 26px;
 	font-weight: 700;
 	color: #000000;
@@ -681,7 +682,7 @@ input {
 
 .appointment p {
 
-	margin: 0 380px 10px;
+//	margin: 0 380px 10px;
 }
 
 .appointment span {
@@ -876,7 +877,6 @@ input {
 
 .catalog-item {
 	width: 1200px;
-//	height: 151px;
 	border-bottom: 1px solid #e5e5e5;
 }
 .catalog-item-wrapper {
@@ -976,41 +976,83 @@ input {
 }
 
 .modal-search {
-	width: 460px;
+	display: none;
+	position: absolute;
+	left: 50%;
+	width: 570px;
+	margin-left: -285px;
+	padding: 55px;
+}
+
+.modal-show {
+	display: block;
 }
 
 .search-form {
 	display: flex;
 	flex-wrap: wrap;
 
-	min-height: 396px;
+
 }
 
 .search-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	position: relative;
 	margin: 0 0 30px;
 	width: 460px;
 }
 
+.search-item label {
+//	margin-right: 20px;
+}
+
 .icon-calendar {
 	position: absolute;
-
+	left: 430px;
+	top: 10px;
 
 }
 
 .search-item input {
 	width: 346px;
-	padding: 6px 13px;
+	padding: 6px 40px 6px 13px;
 	
 }
 
+.search-item a {
+	width: 40px;
+	padding: 6px 0;
+	text-align: center;
+
+	background-color: #f2f2f2;
+}
+
+.search-item svg {
+	fill: #a9a9a9;
+}
+
+.search-item svg:hover {
+	fill: #000000;
+}
+
+.search-item svg:active {
+	fill: #81b3d2;
+}
+
 .search-item .search-quantity {
-	width: 114px;
-	padding: 6px auto;
+	width: 35px;
+	padding: 6px 0;
+}
+
+.search-item-quantity label{
+	margin-right: 37px;
 }
 
 .button-search {
-	margin:0 0 55px;
-	width: 100%;
+	margin: 25px 0 0 0;
+	padding: 15px 0;
+	width: 100%; 
 }
 
