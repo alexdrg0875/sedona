@@ -515,21 +515,21 @@ input {
 
 .main-header-logo {
 	position: absolute;
+	margin-left: -69px;
+	top: 0;
+	left: 50%;
 }
 
 .site-navigation {
 	margin: 0;
 	padding: 0;
 	display: flex;
-	margin: 0 auto;
 	width: 87.92%;
-//	width: 1055px;
 	min-height: 55px;
 }
 
 .site-navigation li {
 	width: 22.75%;
-//	width: 240px;
 	padding: 15px 0;
 }
 
@@ -566,7 +566,7 @@ input {
 }
 
 .tagline p {
-	margin: 0 355px 0;
+	margin: 0 350px 0;
 }
 
 .features-list {
@@ -1019,10 +1019,6 @@ input {
 	width: 460px;
 }
 
-.search-item label {
-//	margin-right: 20px;
-}
-
 .icon-calendar {
 	position: absolute;
 	left: 430px;
@@ -1062,7 +1058,11 @@ input {
 }
 
 .search-item-quantity label{
-	margin-right: 37px;
+	margin-right: 43px;
+}
+
+.search-item-quantity .quantity-children {
+	margin: 0 25px 0 50px;
 }
 
 .button-search {
@@ -1071,3 +1071,9 @@ input {
 	width: 100%; 
 }
 
+.older__svg-minus,
+.older__svg-plus,
+.kids__svg-minus,
+.kids__svg-plus {
+	vertical-align: middle;
+}
